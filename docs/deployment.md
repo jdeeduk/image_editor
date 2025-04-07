@@ -5,10 +5,12 @@
 - Main Branch: `main`
 
 ## Cloudflare Pages Configuration
+- Project Name: image-editor
 - Build Command: `npm run build`
 - Build Output Directory: `.next`
 - Node.js Version: 18.x
 - Framework Preset: Next.js
+- Production Branch: main
 
 ## Environment Variables
 No environment variables are required for the current setup.
@@ -36,8 +38,21 @@ To create a production build locally:
 npm run build
 ```
 
+## Deployment URLs
+- Production: https://image-editor.pages.dev
+- Preview: https://<branch>-image-editor.pages.dev
+
 ## Features
 - Image upload
 - Text overlay with customizable properties
 - Real-time editing
 - Image download with modifications
+- Responsive design
+- Fast global CDN delivery through Cloudflare
+
+## Monitoring
+The application is monitored through Cloudflare's analytics dashboard, providing insights into:
+- Traffic patterns
+- Error rates
+- Performance metrics
+- Cache hit rates
