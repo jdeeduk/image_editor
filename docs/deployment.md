@@ -15,6 +15,12 @@
 ## Environment Variables
 No environment variables are required for the current setup.
 
+## Build Configuration
+The project uses the following build configuration:
+- `next.config.js` with standalone output
+- Cloudflare Pages configuration in `.cloudflare/pages.json`
+- Optimized for edge deployment
+
 ## Development Setup
 1. Clone the repository:
    ```bash
@@ -56,3 +62,15 @@ The application is monitored through Cloudflare's analytics dashboard, providing
 - Error rates
 - Performance metrics
 - Cache hit rates
+
+## Deployment Process
+1. Push changes to the main branch
+2. Cloudflare Pages automatically triggers a build
+3. Build process:
+   - Installs dependencies
+   - Builds Next.js application
+   - Deploys to global CDN
+4. Deployment status available in Cloudflare dashboard
+
+## Rollback Process
+If needed, you can roll back to a previous deployment through the Cloudflare Pages dashboard.
