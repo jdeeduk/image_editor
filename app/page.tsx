@@ -1,10 +1,15 @@
-import ImageEditor from '../components/ImageEditor';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Image Editor</h1>
-      <ImageEditor />
-    </main>
+    <div className="bg-white">
+      <main>
+        <Hero />
+        <Features />
+      </main>
+      <Footer />
+    </div>
   );
 }
